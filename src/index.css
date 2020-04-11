@@ -1,0 +1,10 @@
+body{
+    background: rgb(0, 255, 13),
+}
+#app1{
+    width: 200px;
+    height: 200px;
+    background: blue;
+    transform: rotate(45deg);
+    background: url('./timg.jpeg')
+}
