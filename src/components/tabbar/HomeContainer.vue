@@ -42,9 +42,9 @@ export default {
     data(){
         return {
             lunbotuList:[
-                {img:'../../images/7.png'},
-                {img:'../../images/8.png'},
-                {img:'../../images/9.png'},
+                {img:require('../../images/7.png')},
+                {img:require('../../images/8.png')},
+                {img:require('../../images/9.png')},
             ]
         };
     },

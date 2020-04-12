@@ -5,16 +5,16 @@ const optimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plug
 const uglifyjsWebpackPlugin = require('uglifyjs-webpack-plugin') //  避免css压缩 js不被压缩
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 module.exports = {
-    optimization: {   //优化
-        minimizer: [
-            new uglifyjsWebpackPlugin({ //官方默认参数
-                cache: true,
-                parallel: true,
-                sourceMap: true
-            }),
-            new optimizeCssAssetsWebpackPlugin() //避免css压缩 js不被压缩
-        ]
-    },
+    // optimization: {   //优化
+    //     minimizer: [
+    //         new uglifyjsWebpackPlugin({ //官方默认参数
+    //             cache: true,
+    //             parallel: true,
+    //             sourceMap: true
+    //         }),
+    //         new optimizeCssAssetsWebpackPlugin() //避免css压缩 js不被压缩
+    //     ]
+    // },
     resolve:{
         modules:[path.resolve('node_modules')],
         // extensions:['.js','.css','.json','.vue'],
@@ -58,7 +58,7 @@ module.exports = {
         home: './src/main.js',
         //other: './src/other.js'
     },
-    devtool: 'source-map',  //添加映射文件  帮助调试   devtool: 'eval-source-map'  不单独生成文件     devtool: 'cheap-module-source-map'  生成文件 不报出错行列
+    //devtool: 'source-map',  //添加映射文件  帮助调试   devtool: 'eval-source-map'  不单独生成文件     devtool: 'cheap-module-source-map'  生成文件 不报出错行列
     watch: true,
     watchOptions:{
         poll:1000,  //1s🙏1000次

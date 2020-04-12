@@ -66,3 +66,19 @@ webpack引入vue
 
 39 export default {}一个文件只能用一次  接收：import xxx from 'xx.js'
 40 export title{}  可以多个  接收：import { title } from 'xx.js
+
+npm i 
+npm install babel-plugin-component -D
+
+42  在mui的example里面查找图标样式等
+
+制作
+1 app首页
+    Mint-UI 的Header
+    MUI的Tabbar.html
+        购物车--拷贝扩展css样式到lib 
+        拷贝扩展字体库ttf文件到lib
+        为购物车小图标添加样式 "mui-icon mui-icon-extra mui-icon-extra-cart" 在mui的example里面查找图标样式，源码有样式名称
+    设置路由高亮
+        方式1 检查样式 查看router-link-active 类 自己定义重写  现成的有 mui-active
+        方式2 在router.js中设置linkActiveClass: 'mui-active' 也可以自己写mui-active类
