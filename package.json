@@ -42,7 +42,7 @@
     "eslint-loader": "^3.0.2",
     "jquery": "^3.4.1",
     "mint-ui": "^2.2.13",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "popper.js": "^1.14.7",
     "postcss-loader": "^3.0.0",
     "vue": "^2.6.10",
